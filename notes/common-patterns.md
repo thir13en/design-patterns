@@ -30,7 +30,38 @@ Manages system events. The controller element detects events and triggers action
 1. Transaction Controller: Contains a single action: `execute()`, which represents a unary operation in the system.
 
 Creator method able to decide with specific subclass to implement depending on the environment that invokes it. Basically we delegate the responsability of deciding which Classes to create by delegating the decision to the subclasses in change of requesting the creation of the new object.
-### Expert
+
+### Template method
+Defines a method in which consumers can redefine certain aspects of it. We do this by defining a class with one or more abstract methods.
+
+### Observer
+Solves the use case where an event in a certain objects produces changes in another object. The observer pattern funnels this event in a way that is not too coupled. In this pattern, a certain class holds a list of observers that are notified when a certain event happens within the system.
+
+### Command
+Allows us to treat commands as objects, giving us more control, traceability and the hability to travel back in time in the state of our system.
+ To implement it, we create a class the instance of which will be actual commands in the system.
+
+ ### Adapter
+ Allows to abstract the access to a certain component or class in our system.
+
+ ### Decorator
+ Mostly a compile time developer tool to add responsabilities dynamically to a certain object.
+
+ ### Strategy
+ Holds a set of business logic pieces that can be picked dynamically at run time to achieve the desired results.
+
+ ### Singleton
+ Makes sure that there is a unique instance of a certain class in all our system.
+
+ ### Nullable Object
+ Allows to treat Null values as a valid instance of a certain class.
+
+ ### Proxy
+
+Allows to control access to a certain object from another one in a transparent manner.
+
+### Abstract server
+Decouples client class from server class through an interface that represents the server API.### Expert
 Manages a highly specialized operation within the system. The expert tends to be the Class that models the real or virtual operation that the system is targeting.
 
 ### Pure Fabrication
@@ -56,3 +87,33 @@ The Iterator Class has to implement, at least, the following methods:
 
 ### Factory method
 Creator method able to decide with specific subclass to implement depending on the environment that invokes it. Basically we delegate the responsability of deciding which Classes to create by delegating the decision to the subclasses in change of requesting the creation of the new object.
+
+### Template method
+Defines a method in which consumers can redefine certain aspects of it. We do this by defining a class with one or more abstract methods.
+
+### Observer
+Solves the use case where an event in a certain objects produces changes in another object. The observer pattern funnels this event in a way that is not too coupled. In this pattern, a certain class holds a list of observers that are notified when a certain event happens within the system.
+
+### Command
+Allows us to treat commands as objects, giving us more control, traceability and the hability to travel back in time in the state of our system. To implement it, we create a class the instance of which will be actual commands in the system.
+
+### Adapter
+Allows to abstract the access to a certain component or class in our system.
+
+### Decorator
+Mostly a compile time developer tool to add responsabilities dynamically to a certain object.
+
+### Strategy
+Holds a set of business logic pieces that can be picked dynamically at run time to achieve the desired results.
+
+### Singleton
+Makes sure that there is a unique instance of a certain class in all our system.
+
+### Nullable Object
+Allows to treat Null values as a valid instance of a certain class.
+
+### Proxy
+Allows to control access to a certain object from another one in a transparent manner.
+
+### Abstract server
+Decouples client class from server class through an interface that represents the server API.
